@@ -3,7 +3,7 @@ a small project to get the calorie and nutrition values of a food item
 
 # This is a basic project involving HTML,CSS and Javascript
 
-A user enters a food item into the search bar and the portion size,where he gets back the food's nutritious value as a result.
+A user enters a food item into and portion size in the searchbox,and  gets back the food's nutritious value as a result.
 The idea is to let the user know about the nutritions and glycemic index(GI) and let him/her decide whether the food is good to eat or not.
 
 People those who are suffering with diabetes,heart diseases,blood pressure etc may take a decision based on the app's results.

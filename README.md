@@ -1,4 +1,4 @@
-# calore_counter
+# calorie_counter
 a small project to get the calorie and nutrition values of a food item
 
 # This is a basic project involving HTML,CSS and Javascript

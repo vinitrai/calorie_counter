@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;   /*Allows you to include padding and border to elements total w and h*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;  /*Allows you to smoothly scroll to a position on page, instead of jump to it*/
+}
+
+.navbar {
+  background: #131313;
+  height: 80px;
+  display: flex;            /*Responsive Layout*/
+  justify-content: center;  /*horizontal alignment for flex*/
+  align-items: center;      /*vertical alignment for flex*/
+  font-size: 1.2rem;        /*size relative to root element; 1.2 times greater than default 16px*/
+  position:sticky;          /*makes navbar stay in place even when you scroll down*/
+  top: 0;
+  z-index: 999;             /* vertical stack order of element; higher number means closer to user*/
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between; /*distribute items evenly; first item is flushed to start and last item is flush to end*/
+  height: 80px;
+  z-index: 1;
+  width: 100%;                    /*Makes Calorie and Span go left and right completely*/
+  max-width: 1300px;              /*prevents element's width from being larger than max-width; won't be farther than 1300px*/
+  margin: 0 auto;                 /*0 vertical margin; auto horizontal positions*/
+  padding: 0 50px;                /*allows 50px from left and right edge always*/
+}
+
+#navbar__logo {
+  display: flex;
+  align-items: center;            /*vertical center*/
+  cursor: pointer;                /*changes cursor to hand indicating link when mouse hovers over logo*/
+  text-decoration: none;
+  font-size: 2rem;                /*Twice as big as 16px*/
+  color: #ED3879;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item {               /**not sure why this is needed...**/
+  height: 80px;
+}
+
+.navbar__links {
+  color:#fff;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  width: 125px;                 /**adds spacing between each link**/
+  text-decoration: none;        /**no underline**/
+  height: 100%;                 /** Fills entire vertical space**/
+  transition: all 0.3s ease;    /**changes color slowly and smoothly upon hover**/
+}
+
+/**transition added twice to make the effect smoother**/
+.navbar__links:hover{
+  color:#ED3879;
+  transition: all 0.3s ease;    /**changes color slowly and smoothly upon hover**/
+}
+
